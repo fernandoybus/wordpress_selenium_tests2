@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.12'
+  testCompile 'org.seleniumhq.selenium:selenium-java:2.45.0'
+  testCompile 'commons-io:commons-io:2.4'
+  
+}
+
+test {
+  testLogging.showStandardStreams = true
+}
+
